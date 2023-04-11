@@ -45,9 +45,9 @@ input{
 	font-size:19px;
 }
 
-img{
-	max-width:200px;
-	min-height:200px;
+#image{
+    width:170px;
+    height:170px;
 	border-radius:10px;
 }
 
@@ -63,7 +63,7 @@ font-size:20px;
 }
 
 p{
-Font-size:24px;
+Font-size:19px;
 
 }
 
@@ -80,7 +80,7 @@ button{
 	background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
 	background-color:#c123de;
 	border-radius:6px;
-	border:1px solid #a511c0;
+	border:2.5px solid #a511c0;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -101,4 +101,27 @@ button:focus{
 	top:1px;
 }
 
-        
+.texto{
+padding-left:10px;
+padding-right:10px;
+}
+
+a{
+text-decoration: none;
+color:black;
+
+}
+
+#element{
+    width:50px;
+    height:50px;
+}
+
+.container::-webkit-scrollbar {
+    background-color: #9b14b3;          
+}
+
+body::-webkit-scrollbar-track {
+    background: orange;      
+  }
+  
