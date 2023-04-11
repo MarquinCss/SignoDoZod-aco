@@ -39,6 +39,8 @@
    
   <div class="texto">
 <img id="image" src="" align="left" > <p id="frase"> </p> </img>
+
+<img src="" id="element" >
 Por Marco Marchi <br>
 Github: <a href="https://github.com/MarquinCss">MarquinCss</a>
   </div>
@@ -50,13 +52,15 @@ Github: <a href="https://github.com/MarquinCss">MarquinCss</a>
   //var(S)
     var nome = document.getElementById("nome").value
     var texto
-	var imgSrc
+	  var imgSrc
+    var elemento
     var signo = document.querySelector("#signos").value;
 
     switch(signo){
         case "Explicação":
         texto = `Então ${nome}, este site foi feito para fins de estudos, aproveite sabendo mais sobre seu signo! Agradeço desde já, Marco Marchi.`
 		document.getElementById("image").src = "https://cdn-icons-png.flaticon.com/512/1831/1831951.png"
+  
         break
 
 
@@ -64,71 +68,96 @@ Github: <a href="https://github.com/MarquinCss">MarquinCss</a>
         texto = `Então ${nome}, vocês são conhecidos como: Os mais estressadinho do zodíaco, os arianos são impulsivos, determinados e nada pacientes.`;
 		document.getElementById("image").src = "https://cdn-icons-png.flaticon.com/512/123/123488.png"
 		document.querySelector(".container").style.backgroundColor = "#ff1d1dcb" 
+    document.querySelector("option").style.backgroundColor = "#ff1d1dcb" 
+    document.getElementById("element").src = "https://cdn-icons-png.flaticon.com/512/3163/3163799.png"
+    
         break
         
         case "Touro": 
         texto = `Então ${nome}, vocês são tão calmos e apegados, mas pisa no calo deles para ver o que acontece. Não vamos esquecer da fome sem fim que eles têm!`
 		document.getElementById("image").src = "https://cdn-icons-png.flaticon.com/512/8062/8062732.png"
 		document.querySelector(".container").style.backgroundColor = "#bbff1dcb" 
+    document.querySelector("option").style.backgroundColor = "#bbff1dcb" 
+    document.getElementById("element").src = "https://cdn-icons-png.flaticon.com/512/139/139706.png"
+   
         break
 
         case "Gêmeos":
         texto = `Então ${nome}, vocês são donos da razão e falantes, com essa junção não dá nem para tentar discutir com eles, muitas vezes chamados de falsos, mas varia de pessoa a pessoa.`
 		document.getElementById("image").src = "https://cdn-icons-png.flaticon.com/512/3460/3460898.png"
 		document.querySelector(".container").style.backgroundColor = "#1dff7bcb" 
+    document.querySelector("option").style.backgroundColor = "#1dff7bcb"
+    document.getElementById("element").src = "https://cdn-icons-png.flaticon.com/512/4907/4907850.png"
         break
 
         case "Câncer":
         texto = `Então ${nome}, vocês são Dóceis, gentis, românticos e carinhosos, são pessoas que se preocupam profundamente com seus amigos, família e lar.`
 		document.getElementById("image").src = "https://cdn-icons-png.flaticon.com/512/1864/1864481.png"
 		document.querySelector(".container").style.backgroundColor = "#1dcaffcb" 
+    document.querySelector("option").style.backgroundColor = "#1dcaffcb" 
+    document.getElementById("element").src = "https://cdn-icons-png.flaticon.com/512/2209/2209792.png"
         break
 
         case "Leão":
         texto = `Então ${nome}, vocês são com enorme coração e de sangue quente, os leoninos exalam carisma e generosidade. São pessoas que se sentem responsáveis pelas pessoas que estão ao seu redor e defende-as como um verdadeiro leão.`
 		document.getElementById("image").src = "https://cdn-icons-png.flaticon.com/512/1998/1998713.png"
 		document.querySelector(".container").style.backgroundColor = "#ff1d1dcb" 
+    document.querySelector("option").style.backgroundColor = "#ff1d1dcb" 
+    document.getElementById("element").src = "https://cdn-icons-png.flaticon.com/512/3163/3163799.png"    
         break
 
         case "Virgem":
         texto = `Então ${nome}, As pessoas do signo de Virgem costumam ser inteligentes, detalhistas, metódicas, organizadas, discretas e perfeccionistas. "Trabalham para ter segurança e estabilidade financeira. Como são regidas por Mercúrio, estão sempre em busca de conhecimento.`
 		document.getElementById("image").src = "https://cdn-icons-png.flaticon.com/512/40/40660.png"
 		document.querySelector(".container").style.backgroundColor = "#9dff1dcb" 
+    document.querySelector("option").style.backgroundColor = "#9dff1dcb"
+    document.getElementById("element").src = "https://cdn-icons-png.flaticon.com/512/139/139706.png"
         break
         
         case "Libra":
         texto = `Então ${nome}, Os nativos de Libra são considerados os mais luxuosos e elegantes do zodíaco. Para eles, é como se a vida fosse uma bela e sofisticada obra de arte. Amam a estética das coisas e desfilam elegância por onde passam.`
 		document.getElementById("image").src = "https://cdn-icons-png.flaticon.com/512/2933/2933138.png"
 		document.querySelector(".container").style.backgroundColor = "#7838f0bd" 
+    document.querySelector("option").style.backgroundColor = "#7838f0bd" 
+    document.getElementById("element").src = "https://cdn-icons-png.flaticon.com/512/4907/4907850.png"
         break
 
         case "Escorpião":
         texto = `Então ${nome}, vocês são reservados e profundos, os escorpianos têm a intensidade como característica marcante. São pessoas que exalam mistério e poder, e dificilmente deixam-se acessar por completo. Eles vivem no mundo interior das próprias emoções e são extremamente seletivos ao escolher quem poderá adentrar no seu universo.`
 		document.getElementById("image").src = "https://cdn-icons-png.flaticon.com/512/7432/7432735.png"
 		document.querySelector(".container").style.backgroundColor = "#b0f038bd" 
+    document.querySelector("option").style.backgroundColor = "#b0f038bd" 
+    document.getElementById("element").src = "https://cdn-icons-png.flaticon.com/512/2209/2209792.png"
         break
 
         case "Sargitário":
         texto = `Então ${nome}, as pessoas nascidas sob o signo de Sagitário estão sempre abertas a novas experiências e querendo aprender. Mente aberta e intuitiva, possuem uma personalidade inquieta e mutável. O sagitário personalidade é aquela pessoa que gosta de viver e descobrir todas as coisas que o mundo tem a oferecer.`
 		document.getElementById("image").src = "https://cdn-icons-png.flaticon.com/512/4720/4720561.png"
 		document.querySelector(".container").style.backgroundColor = "#c538f0bd" 
+    document.querySelector("option").style.backgroundColor = "#c538f0bd" 
+    document.getElementById("element").src = "https://cdn-icons-png.flaticon.com/512/3163/3163799.png"
         break
 
         case "Capricórnio":
-        texto = `Então ${nome}, vocês são Obstinados e não costumam confiar nos planos feitos por outras pessoas, preferem seguir seus próprios planos. São pessoas pacientes e disciplinadas, pois sabem que a conquista de seus objetivos vem através de muito trabalho e persistência.`
+        texto = `Então ${nome}, vocês são Obstinados e não costumam confiar nos planos feitos por outras pessoas, preferem seguir seus próprios planos. São pessoas pacientes e disciplinadas, pois sabem que a conquista de seus objetivos vem através de muito trabalho e persistência. <br>`
 		document.getElementById("image").src = "https://cdn-icons-png.flaticon.com/512/4762/4762086.png"
 		document.querySelector(".container").style.backgroundColor = "#f038d7bd" 
+    document.querySelector("option").style.backgroundColor = "#f038d7bd" 
+    document.getElementById("element").src = "https://cdn-icons-png.flaticon.com/512/139/139706.png"
         break
 
         case "Aquário":
         texto = `Então ${nome}, os nativos desse signo têm uma personalidade muito fiel a si mesmo e prezam pela privacidade. A liberdade é um valor fundamental para todos os aquarianos. Eles não toleram que nada e nem ninguém diga a eles como devem ser ou o que devem fazer. São pessoas que valorizam acima de tudo a sua independência e originalidade.`
 		document.getElementById("image").src = "https://cdn-icons-png.flaticon.com/512/2809/2809806.png"
+    document.getElementById("element").src = "https://cdn-icons-png.flaticon.com/512/4907/4907850.png"
         break
 
         case "Peixes":
-        texto = `então ${nome}, vocês são pessoas sensíveis, sonhadoras, empáticas, pacientes, calmas, intuitivas, românticas, generosas, místicas e amáveis. Captam toda a energia do ambiente como esponjas, o que as leva a sentir muitas coisas que não são suas`
+        texto = `Então ${nome}, vocês são pessoas sensíveis, sonhadoras, empáticas, pacientes, calmas, intuitivas, românticas, generosas, místicas e amáveis. Captam toda a energia do ambiente como esponjas, o que as leva a sentir muitas coisas que não são suas`
 		document.getElementById("image").src = "https://cdn-icons-png.flaticon.com/512/3751/3751278.png"
 		document.querySelector(".container").style.backgroundColor = "#f03e38bd" 
+    document.querySelector("option").style.backgroundColor = "#f03e38bd" 
+    document.getElementById("element").src = "https://cdn-icons-png.flaticon.com/512/2209/2209792.png"
         break
 
         default: texto = `Então, ${nome} Insira um signo existente, com primeira letra maiúscula e acentuação correta, por favor, beijos de luz.`
